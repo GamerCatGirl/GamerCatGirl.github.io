@@ -1,40 +1,204 @@
 <!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
 
-		<title>reveal.js</title>
+    <title>reveal.js</title>
 
-		<link rel="stylesheet" href="dist/reset.css">
-		<link rel="stylesheet" href="dist/reveal.css">
-		<link rel="stylesheet" href="dist/theme/black.css">
+    <link rel="stylesheet" href="dist/reset.css" />
+    <link rel="stylesheet" href="dist/reveal.css" />
+    <link rel="stylesheet" href="dist/theme/dracula.css" />
 
-		<!-- Theme used for syntax highlighted code -->
-		<link rel="stylesheet" href="plugin/highlight/monokai.css">
-	</head>
-	<body>
-		<div class="reveal">
-			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
-			</div>
-		</div>
+    <!-- Theme used for syntax highlighted code -->
+    <link rel="stylesheet" href="plugin/highlight/monokai.css" />
+  </head>
 
-		<script src="dist/reveal.js"></script>
-		<script src="plugin/notes/notes.js"></script>
-		<script src="plugin/markdown/markdown.js"></script>
-		<script src="plugin/highlight/highlight.js"></script>
-		<script>
-			// More info about initialization & config:
-			// - https://revealjs.com/initialization/
-			// - https://revealjs.com/config/
-			Reveal.initialize({
-				hash: true,
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <!--<section>Slide 1</section>
+        <section>
+          <section>Slide 2</section>
+          <section>Slide 2.1</section>
+        </section>
+	<section>Slide 3</section> -->
+        <section>
+          <section data-markdown>
+            <textarea data-template>
+						## Presentation Webtechnologies
+						By Merlijn Devroede, Silken Heynderickx, Elyesa Cakirbey & Pieter
+						Verbessem
+						---
+						## Table of contents
+						<a href="#/concepts"> 1. Concept of the website </a>
 
-				// Learn about plugins: https://revealjs.com/plugins/
-				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
-			});
-		</script>
-	</body>
+						<a href="#/technical">2. Technical aspects</a>
+
+						<a href="#/user"> 3. User aspects </a>
+
+						<a> 4. Data aspects </a>
+
+						---
+
+						<a> 5. Web 2.0 </a>
+
+						<a> 6. Map </a>
+
+						<a> 7. Usability, Look and feel </a>
+
+						<a> 8. Demo </a>
+
+					</textarea
+            >
+          </section>
+        </section>
+        <section>
+          <section data-markdown id="concepts">
+            <textarea data-template>
+						## Concept of website
+						A paragraph with some text and a [link](https://hakim.se).
+						---
+						## Execution of Topic
+						Completeness
+
+						Creativity
+					</textarea
+            >
+          </section>
+        </section>
+
+        <section>
+          <section data-markdown id="technical">
+            <textarea data-template>
+						## Technical aspects
+						A paragraph with some text and a [link](https://hakim.se).
+						---
+						## CSS3
+						---
+						## AJAX
+						---
+						## HTML5 components
+						---
+						## Backend
+					</textarea
+            >
+          </section>
+        </section>
+
+        <section>
+          <section data-markdown id="user">
+            <textarea data-template>
+						## User aspects
+						A paragraph with some text and a [link](https://hakim.se).
+						---
+						## Register/ Login
+						---
+						## Profile
+						---
+						## User following & Friends
+					</textarea
+            >
+          </section>
+        </section>
+
+        <section>
+          <section data-markdown id="data">
+            <textarea data-template>
+						## Technical aspects
+						A paragraph with some text and a [link](https://hakim.se).
+						---
+						## Creating data
+						---
+						## Data richness
+						---
+						## Edit data
+						---
+						## Search data
+						---
+						## External data
+						---
+						## Data export
+					</textarea
+            >
+          </section>
+        </section>
+
+        <section>
+          <section data-markdown id="web">
+            <textarea data-template>
+						## Web 2.0
+						A paragraph with some text and a [link](https://hakim.se).
+						---
+						## Social aspect
+						---
+						## Social media usage
+						---
+						## Commenting and reactions
+						---
+						## Crowdsourcing
+					</textarea
+            >
+          </section>
+        </section>
+
+        <section>
+          <section data-markdown id="map">
+            <textarea data-template>
+						## Map
+						A paragraph with some text and a [link](https://hakim.se).
+						---
+						## Markers
+						---
+						## Routing
+						---
+						## Extra
+					</textarea
+            >
+          </section>
+        </section>
+
+        <section>
+          <section data-markdown id="look">
+            <textarea data-template>
+						## Usability, Look and feel 
+						A paragraph with some text and a [link](https://hakim.se).
+						---
+						## Form Validation 
+						---
+						## Responsiveness
+						---
+						## Esthetics
+					</textarea
+            >
+          </section>
+        </section>
+      </div>
+    </div>
+
+    <script src="../dist/reveal.js"></script>
+    <script src="../plugin/markdown/markdown.js"></script>
+    <script src="../plugin/highlight/highlight.js"></script>
+    <script src="../plugin/notes/notes.js"></script>
+    <script src="../plugin/math/math.js"></script>
+
+    <script>
+      Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+
+        plugins: [
+          RevealMarkdown,
+          RevealHighlight,
+          RevealNotes,
+          RevealMath.KaTeX,
+        ],
+      });
+    </script>
+  </body>
 </html>
