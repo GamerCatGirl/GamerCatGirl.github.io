@@ -92,9 +92,9 @@
 						TODO: @Merlijn
 						---
 						## HTML5 components
-						- Geolocation
-						- Header
-						- Footer
+						- Geolocation: when adding recipe, standard location 
+						- Header: menu bar is in a html5 header tag 
+						- Footer: Api documentation
 						---
 						## Backend
 						TODO: @Merlijn
@@ -130,7 +130,8 @@
           <section data-markdown id="data">
             <textarea data-template>
 						## Data aspects
-						A paragraph with some text and a [link](https://hakim.se).
+						- [Drizzle ORM](https://orm.drizzle.team/)
+						- [View](http://localhost:4983/) database
 						---
 						## Creating data
 
@@ -149,7 +150,9 @@
 
 						---
 						## Edit data
-						DEMO: Edit your own [recipe](https://localhost:3000/recipes)
+						<video height="600px" controls>
+							<source src="Edit recipe.mp4" type"video/mp4">
+						</video>
 						---
 						## Search data
 						<video height="600px" controls>
@@ -179,8 +182,11 @@
 						## Social aspect
 						- Commenting, liking and sharing
 						---
-						## Social media usage
+						<h4> Social media usage </h4>
 						- Share to your social media account
+						<video height="600px" controls>
+							<source src="SocialShare.mp4" type"video/mp4">
+						</video>
 						---
 						## Commenting and reactions
 						DEMO: Comment on a [recipe](https://localhost:3000/recipes/id)
@@ -197,24 +203,40 @@
           <section data-markdown id="map">
             <textarea data-template>
 						## Map
+						- Leaflet map
 						DEMO view recipes on [map](http://localhost:3000/recipes)
-
 						DEMO add marker on [map](http://localhost:3000/recipes/add)
 						---
 						<h4> Markers </h4>
 						<p style="font-size: 12px;"> Click on markers to see the recipes </p>
 						<image src="MarkersMap.png" />
 						---
-						## Markers
-						Add your own markers to publish your recipe
-						---
-						### Routing
+						## Markers && Routing
 						<video height="600px" controls>
 							<source src="Map-video-route.mp4" type"video/mp4">
 						</video>
 						---
 						## Extra
-						Popup screen when clicked on markers
+						- LPopup: screen when clicked on markers
+						<pre><code data-line-numbers data-ln-start-from="292">
+								<LPopup>
+									<recipe-card :show-recipe="recipe">
+									</recipe-card>
+								</LPopup>
+							</code></pre>
+						- LControl: place custom items on the leaflet map
+
+						<pre><code data-line-numbers data-ln-start-from="292">
+								<LControl position="bottomleft">
+									<Button label="Add location recipe"
+										>
+									</Button>
+									<Button label="Delete marker"
+										 >
+									</Button>
+								</LControl>
+
+							</code></pre>
 					</textarea
             >
           </section>
