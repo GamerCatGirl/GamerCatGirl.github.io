@@ -15,7 +15,8 @@
 ### Frontend
 
 * Vue
-* [PrimeVue](https://primevue.org)
+* PrimeVue
+  * Component library
 
 ***
 
