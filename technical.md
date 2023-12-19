@@ -2,33 +2,32 @@
 
 ***
 
-## CSS3
+### Backend
 
-* used [PrimeVue](https://primevue.org)
-* on top of PrimeVue we used our own CSS3 to customize it
-
-***
-
-## AJAX
-
-TODO: @Merlijn
+* Nuxt 3
+  * typescript
+  * Vue
+* Drizzle
+  * ORM
 
 ***
 
-## HTML5 components
+### Frontend
 
-* Geolocation: when adding recipe, standard location
-* Header: menu bar is in a html5 header tag
-* Footer: Link to API documentation
-
-***
-
-## Backend
-
-TODO: @Merlijn
+* Vue
+* [PrimeVue](https://primevue.org)
 
 ***
 
 ## API's
 
-<image src="API.png" />
+* everything through API
+  * API Keys
+  * can be used without site
+* documented
+
+***
+
+<video controls>
+  <source src="apiDocs.mp4" type"video/mp4">
+</video>
